@@ -87,27 +87,27 @@
 			<div class="col-sm-6">
 				<!-- SUPPRESSION DES ELEMENTS SUCCESS/FAIL MSG QUI NE SONT PAS VALIDES AUX TESTS W3C -->
 				<form id="form_1">
-					<!-- AJOUT DE LA CLASSE BOLD POUR PERMETTRE UNE MEILLEURE VISIBILITE AUX PARTIES DU FORM -->
+					<!-- AJOUT DE LA CLASSE BOLD POUR PERMETTRE UNE MEILLEURE VISIBILITE AUX PARTIES DU FORM + AJOUT D'ELEMENTS D'ACCESSIBILITE-->
 					<div class="form-group">
-						<label class="bold">
+						<label for="name" class="bold">
 							Nom
 						</label>
-						<input id="name" class="form-control" required />
+						<input id="name" name="name" class="form-control" required />
 					</div>
 					<div class="form-group">
-						<label class="bold">
+						<label for="email" class="bold">
 							Adresse email
 						</label>
-						<input id="email" class="form-control" type="email" required />
+						<input id="email" name="email" class="form-control" type="email" required />
 					</div>
 					<div class="form-group">
-						<label class="bold">
+						<label for="info" class="bold">
 							Comment nous avez-vous connu ?
 						</label>
-						<input class="form-control" required id="input_504" />
+						<input id="info" class="form-control" name="info" required />
 					</div>
 					<div class="form-group">
-						<label class="bold">
+						<label for="message" class="bold">
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
 					</div> 
